@@ -3,7 +3,9 @@
 from room import Room
 
 class Player:
-    def __init__(self, room):
-        self.room: Room = room
-    # def __str__(self):
-    #     return self.room
+    def __init__(self, current_room, items = []):
+        self.current_room: Room = current_room
+        self.items= items
+    def __str__(self):
+        return f"{self.current_room}, {self.items}"
+  
